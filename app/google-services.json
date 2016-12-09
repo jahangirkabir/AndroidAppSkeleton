@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "262505163326",
+    "firebase_url": "https://bl-roadviserrr.firebaseio.com",
+    "project_id": "bl-roadviserrr",
+    "storage_bucket": "bl-roadviserrr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262505163326:android:816def45e22d33e4",
+        "android_client_info": {
+          "package_name": "com.rviserrr.roadviserrr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262505163326-i476l9398shkik008slrdihm9kjl506u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPRwTqLHV8xmWrWekI-hs1Jw1571zxoQY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262505163326:android:768549683ec3312b",
+        "android_client_info": {
+          "package_name": "com.jahanbabu.khoj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262505163326-heseqchs6israfkmr1h3tghadpo9adnu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jahanbabu.khoj",
+            "certificate_hash": "AF705B27327CC61EE99CDEBC244221B1EDBFA530"
+          }
+        },
+        {
+          "client_id": "262505163326-i476l9398shkik008slrdihm9kjl506u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPRwTqLHV8xmWrWekI-hs1Jw1571zxoQY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262505163326-dne9tuis8oelaogbd080ual1ltcal4kt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.roadviserrr"
+              }
+            },
+            {
+              "client_id": "262505163326-i476l9398shkik008slrdihm9kjl506u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

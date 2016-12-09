@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WhiteSmoke"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/scrollView"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/name"
+                android:theme="@style/LostEditTextTheme"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/dateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/selectdate"
+                android:theme="@style/LostEditTextTheme"
+                android:inputType="textPersonName"
+                android:text="" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/reportRemarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="@string/description"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:lines="7"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/grey"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/galleryImageView"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_imagestack"
+                        android:padding="10dp" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/cameraImageView"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_camera"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/displayImageView"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="top|right"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
