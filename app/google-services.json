@@ -1,66 +1,35 @@
 {
   "project_info": {
-    "project_number": "262505163326",
-    "firebase_url": "https://bl-roadviserrr.firebaseio.com",
-    "project_id": "bl-roadviserrr",
-    "storage_bucket": "bl-roadviserrr.appspot.com"
+    "project_number": "205066889254",
+    "firebase_url": "https://androidappskeleton.firebaseio.com",
+    "project_id": "androidappskeleton",
+    "storage_bucket": "androidappskeleton.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:262505163326:android:816def45e22d33e4",
+        "mobilesdk_app_id": "1:205066889254:android:eecf6b11f7fa5832",
         "android_client_info": {
-          "package_name": "com.rviserrr.roadviserrr"
+          "package_name": "com.jahanbabu.AndroidAppSkeleton"
         }
       },
       "oauth_client": [
         {
-          "client_id": "262505163326-i476l9398shkik008slrdihm9kjl506u.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDPRwTqLHV8xmWrWekI-hs1Jw1571zxoQY"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:262505163326:android:768549683ec3312b",
-        "android_client_info": {
-          "package_name": "com.jahanbabu.khoj"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "262505163326-heseqchs6israfkmr1h3tghadpo9adnu.apps.googleusercontent.com",
+          "client_id": "205066889254-bobd5o87bhvjs5hslvhh6vkldu1qdg99.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.jahanbabu.khoj",
+            "package_name": "com.jahanbabu.AndroidAppSkeleton",
             "certificate_hash": "AF705B27327CC61EE99CDEBC244221B1EDBFA530"
           }
         },
         {
-          "client_id": "262505163326-i476l9398shkik008slrdihm9kjl506u.apps.googleusercontent.com",
+          "client_id": "205066889254-k0q38biluqmcs6mniqphkfk58s86khh6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDPRwTqLHV8xmWrWekI-hs1Jw1571zxoQY"
+          "current_key": "AIzaSyDcM3MaFc-sIVSXrmNiR9W_1cw1Gmd6cCM"
         }
       ],
       "services": {
@@ -71,14 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "262505163326-dne9tuis8oelaogbd080ual1ltcal4kt.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.roadviserrr"
-              }
-            },
-            {
-              "client_id": "262505163326-i476l9398shkik008slrdihm9kjl506u.apps.googleusercontent.com",
+              "client_id": "205066889254-k0q38biluqmcs6mniqphkfk58s86khh6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
