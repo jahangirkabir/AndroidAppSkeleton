@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FFD22323</color>
+    <color name="colorPrimary">#683fb5</color>
+    <color name="colorPrimaryDark">#5e309f</color>
+    <color name="colorAccent">#e6ed4604</color>
 
-    <color name="colorFind">#2bca25</color>
-    <color name="colorLost">#C94B27</color>
+    <color name="colorFind">#2590ca</color>
+    <color name="colorLost">#9827c9</color>
 
     <color name="White">#FFFFFF</color>
     <color name="Ivory">#FFFFF0</color>

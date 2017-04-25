@@ -55,7 +55,7 @@
                     android:lines="7"
                     android:paddingLeft="10dp"
                     android:textColor="@color/colorPrimary"
-                    android:textColorHint="@color/grey"
+                    android:textColorHint="@color/Gray"
                     android:gravity="top"/>
 
                 <LinearLayout

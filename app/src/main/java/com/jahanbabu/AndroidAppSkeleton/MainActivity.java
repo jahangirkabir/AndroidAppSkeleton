@@ -15,8 +15,8 @@ import android.view.MenuItem;
 
 //import com.jahanbabu.khoj.lostAndFind.addFragment;
 import com.jahanbabu.AndroidAppSkeleton.eBus.FABClickEvent;
-import com.jahanbabu.AndroidAppSkeleton.base1.Base1Fragment;
-import com.jahanbabu.AndroidAppSkeleton.base1.addFragment;
+import com.jahanbabu.AndroidAppSkeleton.fragment.BaseFragment;
+import com.jahanbabu.AndroidAppSkeleton.fragment.addFragment;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().add(R.id.contentFrame, Base1Fragment.newInstance(context), "lnfFragment").commit();
+        fragmentManager.beginTransaction().add(R.id.contentFrame, BaseFragment.newInstance(context), "lnfFragment").commit();
     }
 
     private void setActionbarTitle(String title) {
