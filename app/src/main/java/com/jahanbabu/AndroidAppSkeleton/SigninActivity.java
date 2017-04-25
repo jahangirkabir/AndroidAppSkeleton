@@ -18,6 +18,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.jahanbabu.AndroidAppSkeleton.Utils.Util;
 import com.orhanobut.hawk.Hawk;
 
 import org.json.JSONException;
@@ -45,29 +46,12 @@ public class SigninActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signin);
 		context = this;
 		CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-//                .setDefaultFontPath("fonts/Raleway-Light.ttf")
 						.setDefaultFontPath("fonts/ClassicRobot.otf")
-//                .setDefaultFontPath("fonts/Roboto-Light.ttf")
 						.setFontAttrId(R.attr.fontPath)
 						.build()
 		);
 
-//		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-//			Window w = getWindow();
-//			w.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-//			w.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-//		}
-
-//		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//			Window window = this.getWindow();
-//			Drawable background = this.getResources().getDrawable(R.drawable.bar_bg);
-//			window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-//			window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
-////			window.setNavigationBarColor(getResources().getColor(android.R.color.transparent));
-//			window.setBackgroundDrawable(background);
-//		}
-
-        getSupportActionBar().setTitle("Signin");
+//        getSupportActionBar().setTitle("Signin");
 
 		emailEditText = (EditText) findViewById(R.id.emailEditText);
         passwordEditText = (EditText) findViewById(R.id.passwordEditText);
@@ -104,7 +88,7 @@ public class SigninActivity extends AppCompatActivity {
 
 			@Override
 			public void onClick(View arg0) {
-				if(SplashActivity.isNetworkAvailable(context)){
+				if(Util.isNetworkAvailable(context)){
 					email = emailEditText.getText().toString();
 					password = passwordEditText.getText().toString();
 					Timber.e("INPUT : " + email+" ---- "+password);
@@ -122,12 +106,16 @@ public class SigninActivity extends AppCompatActivity {
 						} catch (JSONException e) {
 							e.printStackTrace();
 						}
-						requestLogin(mainObj.toString());
+//						requestLogin(mainObj.toString());
+						Intent mainIntent = new Intent(SigninActivity.this, MainActivity.class);
+						startActivity(mainIntent);
+						overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+						finish();
 					} else
 						Toast.makeText(SigninActivity.this, "Please enter Email and Password to signin!", Toast.LENGTH_LONG).show();
 
 				} else {
-					SplashActivity.showNoInternetDialog(context, SigninActivity.this);
+					Util.showNoInternetDialog(context, SigninActivity.this);
 				}
 			}
 		});

@@ -58,7 +58,7 @@ public class SplashActivity extends Activity {
 
 		Timber.e("Testing Timber is working or not !!!");
 
-//		RunAnimation();
+		RunAnimation();
     }
 
 	private void RunAnimation()
@@ -87,57 +87,6 @@ public class SplashActivity extends Activity {
 		});
 	}
 
-	public static boolean isNetworkAvailable(Context context){
-		ConnectivityManager cm =
-				(ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-
-		NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
-		boolean isConnected = activeNetwork != null &&
-				activeNetwork.isConnectedOrConnecting();
-
-		return isConnected;
-	}
-
-	public static void showNoInternetDialog(final Context context, final Activity activity) {
-		AlertDialog dailog;
-		AlertDialog.Builder build = new AlertDialog.Builder(context);
-		build.setMessage("This application requires Internet connection.\nWould you connect to internet ?");
-		build.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				activity.startActivity(new Intent(Settings.ACTION_WIFI_SETTINGS));
-			}
-		});
-		build.setNegativeButton("No", new DialogInterface.OnClickListener() {
-
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				AlertDialog dailog;
-//				ContextThemeWrapper ctw = new ContextThemeWrapper(context, R.style.MyAlertDialogStyle);
-				AlertDialog.Builder build = new AlertDialog.Builder(context);
-				build.setMessage("Are sure you want to exit?");
-				build.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						activity.finish();
-					}
-				});
-				build.setNegativeButton("No", new DialogInterface.OnClickListener() {
-
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						dialog.dismiss();
-					}
-				});
-				dailog = build.create();
-				dailog.show();
-			}
-		});
-		dailog = build.create();
-		dailog.show();
-	}
 	/** A tree which logs important information for crash reporting. */
 	private static class CrashReportingTree extends Timber.Tree {
 		@Override

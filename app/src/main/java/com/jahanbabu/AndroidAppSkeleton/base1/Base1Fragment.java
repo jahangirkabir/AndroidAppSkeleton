@@ -95,7 +95,7 @@ public class Base1Fragment extends Fragment implements MaterialTabListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        v = inflater.inflate(R.layout.fragment_lost_and_find, container, false);
+        v = inflater.inflate(R.layout.fragment_base, container, false);
 
 //        tabHost = (MaterialTabHost) v.findViewById(R.id.materialTabHost);
         viewPager = (ViewPager) v.findViewById(R.id.pager);

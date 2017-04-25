@@ -22,6 +22,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.jahanbabu.AndroidAppSkeleton.Utils.Util;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -57,7 +58,7 @@ public class SignupActivity extends AppCompatActivity {
 
         context = this;
 
-        getSupportActionBar().setTitle("Create Account");
+//        getSupportActionBar().setTitle("Create Account");
 
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
 //                .setDefaultFontPath("fonts/Raleway-Light.ttf")
@@ -124,7 +125,7 @@ public class SignupActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                if(SplashActivity.isNetworkAvailable(context)){
+                if(Util.isNetworkAvailable(context)){
                     fName = firstNameEditText.getText().toString();
                     lName = lastNameEditText.getText().toString();
                     mobile = mobileEditText.getText().toString();
@@ -154,12 +155,16 @@ public class SignupActivity extends AppCompatActivity {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                        requestSingup(mainObj.toString());
+//                        requestSingup(mainObj.toString());
+                        Intent mainIntent = new Intent(SignupActivity.this, SigninActivity.class);
+                        startActivity(mainIntent);
+                        overridePendingTransition(R.anim.right_in, R.anim.right_out);
+                        finish();
                     } else
                         Toast.makeText(SignupActivity.this, "Please fill all fields to continue", Toast.LENGTH_LONG).show();
 
                 } else {
-                    SplashActivity.showNoInternetDialog(context, SignupActivity.this);
+                    Util.showNoInternetDialog(context, SignupActivity.this);
                 }
             }
         });

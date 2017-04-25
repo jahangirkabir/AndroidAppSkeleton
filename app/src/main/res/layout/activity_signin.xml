@@ -34,7 +34,7 @@
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/colorPrimary"
-                android:text="sam@gmail.com">
+                android:text="jk@gmail.com">
             </EditText>
         </android.support.design.widget.TextInputLayout>
 
